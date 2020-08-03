@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "title":"Avanzado grupo N° I",
+            "sub_title_one":"01-10-2018 al 30-06-2019, lunes 19:30",
+            "sub_title_two":"11 plazas disponibles",
+            "checked":false
+        },
+        {
+            "title":"Avanzado grupo N° IV",
+            "sub_title_one":"01-10-2018 al 30-06-2019, sabado 12:00",
+            "sub_title_two":"8 plazas disponibles",
+            "checked":false
+        },
+        {
+            "title":"Avanzado grupo N° II",
+            "sub_title_one":"01-10-2018 al 30-06-2019, viernes 10:00",
+            "sub_title_two":"16 plazas disponibles",
+            "checked":false
+        },
+        {
+            "title":"Avanzado grupo N° III",
+            "sub_title_one":"01-10-2018 al 30-06-2019, viernes 19:30",
+            "sub_title_two":"7 plazas disponibles",
+            "checked":false
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons class="opt_icon_header">
+      <ion-back-button defaultHref="activities"></ion-back-button>
+      <ion-icon name="book"></ion-icon>
+      <ion-icon name="map"></ion-icon>
+    </ion-buttons>
+    <div class="text_center">
+      <i-text>Talleres culturales</i-text>
+    </div>
+    <ion-searchbar placeholder="Buscar actividades ..." class="header_search"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="col_filter">
+        <ion-icon name="filter-outline" class="color_blue_icon"></ion-icon>
+        <ion-text class="text_filter">ORDENAR</ion-text>
+      </ion-col>
+      <ion-col class="col_filter_2">
+        <ion-icon name="funnel-sharp" class="color_blue_icon"></ion-icon>
+        <ion-text class="text_filter">FILTRAR</ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-text>
+    <h6 class="text_result_find">Se han encontrado 85 actividades:</h6>
+  </ion-text>
+  <ion-card *ngFor="let i of dataJson" (click)="goToPageDetail(i.id)">
+    <ion-card-header>
+      <ion-card-subtitle color="primary">{{ i.title }}</ion-card-subtitle>
+      <ion-text>
+        <ion-icon name="location" color="primary"></ion-icon>
+        {{ i.sub_title }}
+      </ion-text>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col class="row_content">
+            <ion-icon name="calendar" class="color_calendary icon_stl"></ion-icon>
+            <ion-text *ngFor="let years of i.option_content_one"><b>{{ years.date }}</b></ion-text>
+          </ion-col>
+          <ion-col class="row_content">
+            <ion-icon name="menu" color="danger" class="icon_stl"></ion-icon>
+            <ion-text class="text_row_content"><b>{{ i.option_content_two }}</b></ion-text>
+          </ion-col>
+          <ion-col class="row_content">
+            <ion-icon name="people" color="warning" class="icon_stl"></ion-icon>
+            <ion-text class="text_row_content"><b>{{ i.option_content_three }}</b></ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

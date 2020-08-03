@@ -1,0 +1,49 @@
+{
+    "data":[
+        {
+            "id":8603,
+            "title":"Bailes de salon por pareja",
+            "sub_title":"Centro Cívico de casa de reloj",
+            "option_content_one":[
+                {
+                    "date":2019
+                },
+                {
+                    "date":2020
+                }
+            ],
+            "option_content_two":"Trimestral por sorteo",
+            "option_content_three":"Al menos 16 años"
+        },
+        {
+            "id":8602,
+            "title":"Bailes de salón individual",
+            "sub_title":"Centro Cívico clara ines",
+            "option_content_one":[
+                {
+                    "date":2018
+                },
+                {
+                    "date":2019
+                }
+            ],
+            "option_content_two":"Trimestral por sorteo",
+            "option_content_three":"Al menos 16 años"
+        },
+        {
+            "id":8601,
+            "title":"Bailes de salón individual",
+            "sub_title":"Centro Cívico Lavapies",
+            "option_content_one":[
+                {
+                    "date":2018
+                },
+                {
+                    "date":2019
+                }
+            ],
+            "option_content_two":"Trimestral por sorteo",
+            "option_content_three":"Al menos 16 años"
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-toolbar class="header_search" color="primary">
+    <ion-img class="logo_indra" src="assets/icon/logo_indra.png"></ion-img>
+    <ion-label>Plataforma de actividades</ion-label>
+    <ion-searchbar placeholder="Buscar actividades ..."></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <h6 class="title_content">Explorar por categoria</h6>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="border_card_red" (click)="goToPage(1)">
+          <ion-card-header>
+            <ion-card-title class="title_card_menu">
+              Taller Culturales
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content_card_menu">
+              <i-text class="number_menu_card">89</i-text>
+              <ion-icon name="book-outline" color="danger"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="border_card_brown">
+          <ion-card-header>
+            <ion-card-title class="title_card_menu">
+              Campamentos
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content_card_menu">
+              <i-text class="number_menu_card">80</i-text>
+              <ion-icon name="triangle-outline" class="color_brown"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="border_card_green">
+          <ion-card-header>
+            <ion-card-title class="title_card_menu">
+              Campamentos especiales
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content_card_menu">
+              <i-text class="number_menu_card">52</i-text>
+              <ion-icon name="golf-outline" class="color_green"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="border_card_orange_2">
+          <ion-card-header>
+            <ion-card-title class="title_card_menu">
+              Centros Abiertos especializados
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content_card_menu">
+              <i-text class="number_menu_card">15</i-text>
+              <ion-icon name="chatbox-ellipses-outline" class="color_orange_2"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card class="border_card_blue">
+          <ion-card-header>
+            <ion-card-title class="title_card_menu">
+              Planetario
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content_card_menu">
+              <i-text class="number_menu_card">52</i-text>
+              <ion-icon name="planet-outline" color="secondary"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="border_card_orage_1">
+          <ion-card-header>
+            <ion-card-title class="title_card_menu">
+              Centros abiertos en inglés
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content_card_menu">
+              <i-text class="number_menu_card">30</i-text>
+              <ion-icon name="chatbubbles-outline" class="color_orange_1"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+        <ion-card class="border_card_gray">
+          <ion-card-header>
+            <ion-card-title class="title_card_menu">
+              Semana Blanca
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <div class="content_card_menu">
+              <i-text class="number_menu_card">40</i-text>
+              <ion-icon name="image-outline" class="color_gray"></ion-icon>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

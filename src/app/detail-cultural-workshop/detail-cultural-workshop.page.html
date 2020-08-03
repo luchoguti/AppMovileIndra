@@ -1,0 +1,82 @@
+<ion-header class="header">
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="col_back" size="2">
+          <ion-back-button defaultHref="cultural-workshop"></ion-back-button>
+        </ion-col>
+        <ion-col class="col_icon_librery">
+          <ion-icon name="book" class="icon_book"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div class="text_center">
+      <i-text>Bailes de salon por parejas</i-text>
+    </div>
+    <div class="text_center">
+      <i-text class="text_sub_title">TALLERES CULTURALES</i-text>
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-card class="card" *ngFor="let detailCultural of dataJson">
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-icon name="people" color="warning"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>Por parejas</h2>
+          <p>{{ detailCultural.destinatarios }}</p>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-icon name="calendar" class="color_calendary"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>2018 / 2019</h2>
+          <p>{{ detailCultural.horario }}</p>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-icon name="location" color="primary"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ detailCultural.donde}}</h2>
+          <p>{{ detailCultural.direccionCentro }}</p>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-icon name="call" class="color_telephone"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ detailCultural.telefono }}</h2>
+          <p>_</p>
+        </ion-label>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-icon name="at" color="warning"></ion-icon>
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ detailCultural.email }}</h2>
+          <p>_</p>
+        </ion-label>
+      </ion-item>
+      <p class="text_description">{{ detailCultural.descripcion }}</p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <div id="map"></div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<ion-footer>
+  <ion-toolbar class="toolbar_footer">
+    <ion-button style="--background:#FF8200" (click)="selectGroup()">Seleccionar grupo</ion-button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,69 @@
+$padding: 10px;
+$color_brown : #8B572A;
+$orange_1:#FF8200;
+$green: #9AAE04;
+$gray: #777777;
+$orange_2: #FFB81C;
+
+ion-card{
+    height: 93px;
+    width: 100%;
+}
+ion-icon{
+    height: 1.3em;
+    width: 1.7em;
+}
+.color_orange_2{
+    color: $orange_2;
+}
+.color_gray{
+    color: $gray;
+}
+.color_green{
+    color: $green;
+}
+.color_brown{
+    color: $color_brown;
+}
+.color_orange_1{
+    color: $orange_1;
+}
+.header_search{
+    padding: $padding;
+}
+.logo_indra{
+    height: 1.2em;
+    width: 2em;
+    display: inline-flex;
+}
+.number_menu_card{
+    color:#FF8C14;
+}
+.content_card_menu{
+    display: flex;
+    justify-content: space-around;
+}
+.title_card_menu{
+    font-size: 11px;
+}
+.border_card_red{
+    border-left: solid red 7px;
+}
+.border_card_blue{
+    border-left: solid blue 7px;
+}
+.border_card_brown{
+    border-left: solid $color_brown 7px;
+}
+.border_card_orage_1{
+    border-left: solid $orange_1 7px;
+}
+.border_card_green{
+    border-left: solid $green 7px;
+}
+.border_card_gray{
+    border-left: solid $gray 7px;
+}
+.border_card_orange_2{
+    border-left: solid $orange_2 7px;
+}

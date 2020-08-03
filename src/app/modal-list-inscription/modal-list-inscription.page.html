@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-item lines="none">
+    <ion-button (click)="closeModel()" size="small" slot="end">
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-button>
+  </ion-item>
+  <ion-item>
+    <i-text>
+      <h2><b>Grupo al que inscribirse</b></h2>
+    </i-text>
+  </ion-item>
+  <ion-item *ngFor="let listInscrip of dataJson">
+    <ion-label>
+      <h2>{{ listInscrip.title }}</h2>
+      <p>{{ listInscrip.sub_title_one }}</p>
+      <p>{{ listInscrip.sub_title_two }}</p>
+    </ion-label>
+    <ion-avatar slot="end">
+      <ion-checkbox (ionChange)="activateButton(listInscrip.checked)" [(ngModel)]="listInscrip.checked"></ion-checkbox>
+    </ion-avatar>
+  </ion-item>
+  <ion-item>
+    <ion-toolbar class="toolbar_footer">
+      <ion-button style="--background:#FF8200" (click)="selectGroup()" [disabled]="disabled">
+          Seleccionar grupo
+      </ion-button>
+    </ion-toolbar>
+  </ion-item>
+</ion-content>
